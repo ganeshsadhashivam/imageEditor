@@ -23,6 +23,10 @@ body {
   padding: 30px 35px 35px;
 }
 
+.container.disable :where(.editor-panel, .reset-filter, .save-img) {
+  opacity: 0.6;
+  pointer-events: none;
+}
 .container h2 {
   font-size: 22px;
   font-weight: 500;
@@ -112,6 +116,7 @@ body {
   flex-grow: 1;
   display: flex;
   align-items: center;
+  overflow: hidden;
   justify-content: center;
   margin-left: 20px;
 }
